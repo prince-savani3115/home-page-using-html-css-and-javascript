@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <script src="./login.js" defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Login Page</title>
+</head>
+<body>
+    <form  name="LogForm" class="Login-form" ">
+        <h1>LOGIN</h1>
+        <p>
+            <label for="name">Username<span id="required">*</span></label>
+            <input type="text" id="username" name="Name" 
+                placeholder="Enter your Username" />
+            <span id="name-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="password">Password<span id="required">*</span></label>
+            <input type="password" id="password" name="Address" 
+                placeholder="Enter your Password" />
+            <span id="password-error" class="error-message"></span>
+        </p>
+        <p id="frgpsw"><a href="../resetpassword/reset.html">Forget password?</a></p>
+        <p>
+            <button class="showhome" id="submit" onclick="saveData()">Login</button>
+            <span id="showRegistration">Don't have an account?</span>
+            <a href="../registration/registration.html">Register</a>
+
+        </p>
+
+    </form>
+</body>
+</html>

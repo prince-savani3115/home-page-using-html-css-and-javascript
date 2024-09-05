@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <script src="./registration.js" defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Registration Page</title>
+</head>
+<body>
+    <form action="" method="post" name="RegForm" class="register-form"">
+
+      <h1>REGISTRATION</h1>
+      <p>
+        <label for="name">Name<span id="required">*</span></label>
+        <input
+          type="text"
+          id="name"
+          name="Name"
+          placeholder="Enter your full name"
+          class="handleChange"
+        
+        />
+        <span id="name-error" class="error-message"></span>
+      </p>
+      <p>
+        <label for="address">Address<span id="required">*</span></label>
+        <input
+          type="text"
+          id="address"
+          name="Address"
+          placeholder="Enter your address"
+          class="handleChange"
+        />
+        <span id="address-error" class="error-message"></span>
+      </p>
+      <p>
+        <label for="email">E-mail Address<span id="required">*</span></label>
+        <input
+          type="text"
+          id="email"
+          name="EMail"
+          placeholder="Enter your email"
+          class="handleChange"
+        />
+        <span id="email-error" class="error-message"></span>
+      </p>
+      <p>
+        <label for="password">Password<span id="required">*</span></label>
+        <input
+          type="password"
+          id="password"
+          name="Password"
+          placeholder="Password"
+          class="handleChange"
+        />
+        <span id="password-error" class="error-message"></span>
+      </p>
+      <p>
+        <label for="subject">Select Your Course<span id="required">*</span></label>
+        <select id="subject" name="Subject"   >
+          <option value="" id="selectcrs" >Select Course</option>
+          <option value="BTECH" id="course">BTECH</option>
+          <option value="BBA" id="course1">BBA</option>
+          <option value="BCA" id="course2">BCA</option>
+          <option value="B.COM" id="course3">B.COM</option>
+        </select>
+        <span id="subject-error" class="error-message"></span>
+      </p>
+      <p>
+        <label for="comment">College Name</label>
+        <textarea id="comment" name="Comment"
+        class="handleChange"></textarea>
+      </p>
+      <p id="agreeLine">
+        <input type="checkbox" id="agree" name="Agree"  class="handleChange" />
+        <label for="agree" id="agreebox">I agree to the above information</label>
+        <span id="agree-error" class="error-message"></span>
+      </p>
+      <p id="spaceBtn">
+        <a href="../login/login.html"><input type="submit" value="Submit" name="Submit" id="show-login" onclick="saveData()"  /></a>
+        <input type="reset" value="Reset" name="Reset"/>
+        <span id="showLogin">Already have an account?</span>
+        <button type="login" ><a href="../login/login.html">Login</a></button>
+      </p>
+    </form>
+    <br/>
+
+  </body>
+</html>
